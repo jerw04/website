@@ -1,0 +1,237 @@
+/* Updated Gothic and High UI/UX Style */
+
+body {
+    margin: 0;
+    font-family: 'Lora', serif; /* Gothic serif font */
+    background-color: #111; /* Dark background for a gothic feel */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding-top: 60px
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #737070); /* Deep black gradient */
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8); /* Dark shadow for depth */
+    display: flex;
+    justify-content: space-between; /* Spaces out logo and nav */
+    align-items: center; /* Aligns vertically in the middle */
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: auto;
+}
+
+.logo-img-new img {
+    height: 3.5em;
+    filter: grayscale(100%); /* Gothic monochrome effect */
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    
+    visibility: visible;
+    
+}
+
+nav a:hover {
+    color: #d4af37; /* Gold gothic highlight color */
+    border-bottom: 2px solid #d4af37;
+}
+
+/* PARALLAX LOADER */
+.parallax_loader {
+    position: relative; 
+    background-image: url('img/img69.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    overflow: hidden; 
+}
+
+.parallax_loader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 1; 
+}
+
+.parallax_loader div {
+    position: relative;
+    z-index: 2;
+}
+
+.title-text {
+    font-size: 3.5em;
+    color: #d4af37;
+    font-family: 'Lora', serif;
+    background-color: transparent;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* ABOUT SECTION */
+.about_sec {
+    padding: 4em 2em;
+    background-color: #1c1c1c;
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+.about_sec h1 {
+    font-size: 3em;
+    color: #d4af37;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+/* CAR OPTIONS */
+.car_options {
+    padding: 3em;
+    background: #111;
+    text-align: center;
+}
+
+.car_options h3 {
+    font-size: 2.8em;
+    margin-bottom: 1em;
+    color: #d4af37;
+}
+
+.slide_car {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+}
+
+.slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease;
+    background-color: #222;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(80%); /* Grayscale effect */
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.slide:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: #d4af37;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide:hover .slide-content {
+    opacity: 1;
+}
+
+.car-name {
+    font-family: 'Lobster', cursive;
+    font-size: 2.2em;
+}
+
+/* BUTTONS */
+.s-btn--scooter-bg {
+    background-color: #d4af37;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.s-btn--scooter-bg:hover {
+    background-color: #b8860b;
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #333;
+}
+
+.footer-content p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer a {
+    color: #d4af37;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #b8860b;
+}
+
+
