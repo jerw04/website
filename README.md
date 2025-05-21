@@ -49,9 +49,6 @@ website/
 └── images/
 
 
-## 📸 Screenshots
-
-> (Insert screenshots here or mention: "See `screenshots/` folder if added.")
 
 ## 🧠 How It Works
 
