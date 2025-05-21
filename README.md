@@ -65,7 +65,7 @@ website/
 
 ## 📧 Feedback and Contact
 
-For any issues, contact: **jerwin.manuel2022@vitstudent.ac.in**
+For any issues, contact: **jerwinmanuel04@gmail.com**
 
 ---
 
